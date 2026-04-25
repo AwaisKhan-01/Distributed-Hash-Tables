@@ -114,4 +114,4 @@ private:
 };
 
 
-#endif TODEC_H
+#endif // BIGINTTODEC_H
