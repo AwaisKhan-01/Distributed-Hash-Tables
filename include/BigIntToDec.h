@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #ifndef BIGINTTODEC_H
 #define BIGINTTODEC_H
 

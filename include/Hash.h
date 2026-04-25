@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include "SHA1.h"
 
 using namespace std;
@@ -35,7 +34,7 @@ const string calculateAudioHash(const std::string& fileName) {
     }
 
     audioFile.seekg(0, std::ios::end);
-    int fileSize = audioFile.tellg();
+    std::streamsize fileSize = audioFile.tellg();
     audioFile.seekg(0, std::ios::beg);
 
     char* buffer = new char[fileSize];
@@ -48,6 +47,7 @@ const string calculateAudioHash(const std::string& fileName) {
     checksum.update(buffer);
     const string hash = checksum.final();
 
+    delete[] buffer;
     return hash;
 }
 
