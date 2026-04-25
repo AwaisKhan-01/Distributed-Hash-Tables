@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #ifndef BIGINTTODEC_H
 #define BIGINTTODEC_H
 
@@ -114,4 +113,4 @@ private:
 };
 
 
-#endif TODEC_H
+#endif // BIGINTTODEC_H
